@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Lauren Lee Portfolio</title>
+</head>
+<body>
+  <header>
+    <button class="nav-toggle" aria-label="toggle-navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>   
+        <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li> 
+        <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li> 
+        <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>      
+      </ul>
+    </nav>
+  </header>
+
+        <!--Introduction-->
+        <section class="intro" id="home">
+          <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Lauren Lee</strong>
+          </h1>
+          <p class="section__subtitle section__subtitle--intro">jr web dev</p>
+          <img src="images/me.jpg" alt="a picture of me" class="intro__img">
+        </section>
+
+        <!--My Services-->
+        <section class="myservices" id="services">
+          <h2 class="section__title section__title--services"><strong>What I Do</strong></h2>
+          <div class="services">
+            <div class="service">
+              <h3>Front-End</h3>
+              <p class="service_desc">Every website is unique and created with its own purpose. The focus is on the design, layout, content, and images which are important for easy navigation and readability. 
+                 Websites are beautifully developed with each code tailoring to the needs of your brand.  </p>
+            </div>
+
+            <div class="service">
+              <h3>Back-End</h3>
+              <p class="service_desc">While the backend manages the "behind-the-scenes" functionality of a web application, I have experience with PHP to connect websites to a database creating a dynamic web page giving users access to information to create, read, update, and delete data right on the screen.  </p>
+            </div>
+
+            <div class="service">
+              <h3>UX Design</h3>
+              <p class="service_desc">The importance of UX is to fulfill the user's needs. I have experience with creating a product that focuses on the aspects of branding, usability, and function that your users will enjoy. The result of a good design allows us to use products effortlessly.</p>
+            </div>
+          </div>
+
+          <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!--About Me-->
+        <section class="about-me" id="about">
+          <h2 class="section__title section__title--about"><strong>Who I am</strong></h2>
+          <p class="section__subtitle section__subtitle--about">aspiring web developer/designer based out of TN</p>
+
+          <div class="about-me__body">
+            <p>Hello World! I am excited to introduce myself to the world of coding and design. A couple years ago, I got bored with doing payroll
+              and decided to work towards a totally different career. 
+              I love technology, so I started to explore my options. 
+              After creating my first "Hello World" website, I was hooked to the creativity and challenge of coding. I had finally discovered my passion as the opportunities to design, build and learn were endless!
+              I love seeing the results of my efforts!</p>
+            
+            <p>Although I do not have any cool professional experience yet, I have recently started volunteering at my church helping with their website. 
+              I manage the app notes each week as well as assisting with revamping their whole site for a fresh look. </p>
+            <p>As I am currently working towards my degree in computer information technology, 
+              I have gained basic understanding with UX design, web development, database management, and backend development with PHP. 
+              With these fundamental foundations, I have the confidence to effectively work and build skills with front-end, back-end and the design of a website.</p>
+              <p>Just like this portfolio, I enjoy building from scratch! It's like a blank canvas with endless possibilities to be creative and produce exactly what a business needs.</p>
+            <p>I am eager to put my skills into professional work as I continue to grow with your company!</p>
+
+          </div>
+
+          <img src="images/laptop.jpg" alt="another picture" class="about-me__img">
+        </section>
+
+        <!--My Work-->
+        <section class="my-work" id="work">
+          <h2 class="section__title"><strong>My Work</strong></h2>
+          <p class="section__subtitle">A few projects... </p>
+
+          <div class="portfolio">
+            <!--portfolio item 1-->
+            <!--Put birthday project here-->
+             <a href="projects/birthdaysite/s.home.html" target="_blank" class="portfolio__item">
+              <img src="images/bday4.jpg" alt="Picture of birthday cake" class="portfolio__img">
+            </a>
+            <!--portfolio item 2-->
+            <!--put PHP project here-->
+            
+            <a href="projects/php/LEE_L_PROCESS_BOOK.docx" target="_blank" class="portfolio__item">
+              <img src="images/php.jpg" alt="PHP Picture" class="portfolio__img" id="php-photo">
+            </a>
+            
+            <!--portfolio item 3-->
+            <!--put UX Design project here-->
+            <a href="projects/uxdesign/uxdesign_project.pdf" target="_blank" class="portfolio__item">
+              <img src="images/Background.png" alt="#" class="portfolio__img">
+            </a>
+          </div>
+
+          <a href="#home" class="btn2">To the Top</a>
+        </section>
+
+
+        <!--footer-->
+        <footer class="footer" id="footer">
+          <a href="mailto:lauren.a0927@gmail.com" class="footer__link">Email me!</a>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.facebook.com/lauren.a.premer/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.linkedin.com/in/lauren-lee-6164451a3/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://github.com/LaurenLee30" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+            
+          </ul>
+        </footer>
+
+
+        <script src="js/index.js"></script>
+
+
+  
+</body>
+</html>
