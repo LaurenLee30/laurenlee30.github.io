@@ -1,0 +1,61 @@
+/*----------contact form---------*/
+
+form {
+  padding-bottom: 50px;
+  height: 100vh;
+text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+  width: 50vw; /* Full width */
+  padding: 3px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--headerclr);
+  color: var(--soft-gold);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: var(--soft-gold);
+  color: black;
+
+}
+
+/*--------------title--------*/
+.contact-title {
+  top: -10px;
+  left: 2px;
+  font-size: 50px;
+  padding-bottom: 25px;
+  animation: contact-title ease 1s forwards .1s;
+}
+
+
+@keyframes contact-title {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(10px); opacity:1;}
+}
+
+@keyframes contact-form {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(20px); opacity:1;}
+}

@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@300&family=Poppins:wght@200;400;700&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body {
+  font-family: var(--Poppins);
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+
+  --brown: #896c68;
+  --orange: #ec8e75;
+  --lightpink: #eac9aa;
+  --yellow: #f6dda7;
+  --palegreen: #82a18f;
+  --black: #414a4c;
+
+  --Poppins: 'Poppins', cursive;
+  --dancing: 'Dancing Script', cursive;
+}
+
+/*General Styles*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 110px;
+  margin: 0;
+  font-weight: 600;
+  font-family: var(--dancing);
+  color: var(--brown);
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 300;
+}
+
+/*=X=General Styles=X=*/
+
+/*===================Navigation======================*/
+nav {
+  display: flex; /* appear inline rather than stacked */
+  color: var(--orange);
+  font-size: 40px;
+  justify-content: space-between;
+
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 150px; /* width of whole ul container */
+  justify-content: space-around; /*gives equal space around each link*/
+  font-size: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.logo {
+  width:200px;
+  height: 75px;
+  padding: 15px;
+  font-family: var(--dancing);
+}
+
+.logo img {
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.button a {
+  color: #fefefe;
+}
+/*========X==========Navigation===========X==========*/
+
+/*===================Sections======================*/
+
+
+section {
+  background-color: whitesmoke;
+}
+
+.hero {
+  background-color: var(--lightpink);
+  /* inherited height from "section" */
+  height: 100vh;  /* the container will be as tall as whatever browser viewed in - this overrides the "section" height" */ 
+}
+
+/* to flex height based whatever browser we're in */
+/*hero-text will stay in the center*/
+.hero-area {
+  display: flex; /* makes it flexible for whatever browser we're in..appear inline rather than stacked */
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text{
+  width: 100%;
+  margin-left: 80px;
+  margin-bottom: 100px;
+
+}
+
+.button {
+  width: 175px;
+  height: 37px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: var(--palegreen);
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  background-color: var(--paleYellow);
+}
+ .button:active {
+  background-color: var(--lightGreen);
+  color: var(--coral);
+ }
+
+ .socials{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+  font-size: 50px;
+  margin-top: 120px;
+  padding-right: 40px;
+  color: var(--orange);
+ }
+
+.social {
+  margin: 10px;
+}
+
+.social a {
+  color: var(--orange)
+}
+
+/*-----------------------------------------SECTION 2--ABOUT ME*/
+.subsection {
+ display: flex;
+ justify-content: space-around;
+ padding: 70px;
+ background-color: rgb(233, 226, 230);
+}
+
+.about-me-title {
+  color: var(--black);
+  font-family: var(--dancing);
+  font-size: 3rem;
+  color: var(--brown);
+
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+
+.headshot {
+  width: 300px;
+  border-radius: 50%;
+
+  float: right;
+
+}
+
+.about-me p {
+  padding-right: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+
+}
+
+
+
+
+
+/*----------------------------------------SECTION 3--PROJECTS*/
+.project-container {
+  display: flex;
+  justify-content: space-around;
+
+
+
+}
+
+.project-title {
+  font-family: var(--dancing);
+  font-size: 3rem;
+  color: var(--brown);
+}
+
+.project-image {
+  width: 150px;
+  border-radius: 250px;
+  margin: 20px;  /*padding has to be the same on all sides for circle to work */
+}
+
+.project-builders, .project-party {
+  width: 90px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-card {
+  width: 200px;
+  height: 300px;
+  box-shadow: 5px 5px 20px gray;
+  border-radius: 10px;
+  background-color: rgb(233, 226, 230);
+}
+
+.project-card h3 {
+  font-family: var(--Poppins);
+}
+
+.sub-text {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.subsection-projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: var(--yellow);
+}
+
+/*---------education---------*/
+.subsection-education {
+  background-color: var(--lightpink);
+}
+
+.subsection-education h1 {
+    font-family: var(--dancing);
+  font-size: 3rem;
+  color: var(--brown);
+}
+
+/*----------------------------------------SECTION 4*/
+.contact-container {
+  height: 50vh;
+}
+
+
+/*=======X===========Sections===========X==========*/
+
+
+.logo {
+  width:300px;
+  height: 75px;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.logo img {
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+
+
+footer {
+  height: 125px;
+  background-color: var(--palegreen);
+  text-align: center;
+}
+
+footer i {
+  color: var(--brown);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--lightpink);
+}
+
+footer a:hover {
+  color: #414a4c;
+}
+
+.createdby {
+  font-family: var(--dancing);
+  color: aliceblue;
+  font-size: 1rem;
+
+}
+
+.email {
+  padding-top: 10px;
+}
+
+
+
+
+
+/*-------media queries-------*/
+
+@media screen and (max-width:849px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .subsection {
+    display: block;
+  }
+
+  .about-me {
+    display: flex;
+  }
+
+  .about-me-title {
+    padding-right: 15px;
+  }
+
+  .headshot {
+    margin: auto;
+    width: 60%;
+  }
+
+  ul {
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+
+  .hero-text {
+    margin-left: 20px;
+  }
+
+  .button {
+    width: 4.5em;
+    height: 25px; 
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .headshot {
+    width: 60%;
+  }
+}
